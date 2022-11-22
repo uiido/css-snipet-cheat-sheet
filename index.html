@@ -26,9 +26,12 @@
                 The default is <emphasis>row</emphasis>, but you can also use <emphasis>row-reverse</emphasis>,
                 <emphasis>column</emphasis>, or <emphasis>column-reverse</emphasis>.
             </p>
-            <div class="codes">.container {
+            <div class="codes">
+                <pre><code>.container {
                 flex-direction: row | row-reverse | column | column-reverse;
-                }</div>
+                }</code></pre>
+            </div>
+        </article>
         </article>
 
         <article class="code-box">
@@ -55,9 +58,12 @@
             <p>This defines the alignment along the main axis. It helps distribute extra free space leftover when either
                 all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It
                 also exerts some control over the alignment of items when they overflow the line.</p>
-            <emphasis>Flex-start</emphasis> is the default but you may also use <emphasis>1</emphasis>, <emphasis>2
-            </emphasis>, <emphasis>3</emphasis>, <emphasis>4</emphasis>, <emphasis>5</emphasis>, <emphasis>6</emphasis>,
-            <emphasis>7</emphasis>, <emphasis>8</emphasis>, and <emphasis>9</emphasis>.</p>
+            <emphasis>Flex-start</emphasis> is the default but you may also use <emphasis>flex-end</emphasis>,
+            <emphasis>start
+            </emphasis>, <emphasis>end</emphasis>, <emphasis>left</emphasis>, <emphasis>right</emphasis>, <emphasis>
+                center</emphasis>,
+            <emphasis>space-between</emphasis>, <emphasis>space-around</emphasis>, and <emphasis>space-evenly</emphasis>
+            .</p>
             <div class="codes">.container {
                 justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start |
                 end | left | right ... + safe | unsafe;
@@ -66,14 +72,26 @@
 
         <article class="code-box">
             <h2>align-items</h2>
-            <p>Info 5</p>
-            <div class="codes">here</div>
+            <p>This defines the default behavior for how flex items are laid out along the cross axis on the current
+                line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).
+                The default is <em>stretch</em>, but you may also use <em>flex-start / start /
+                    self-start</em>, <em>flex-end / end / self-end
+                </em>, <em>center</em>, or <em>baseline</em>.
+            </p>
+            <div class="codes">.container {
+                align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline |
+                start | end | self-start | self-end + ... safe | unsafe;
+                }</div>
         </article>
 
         <article class="code-box">
             <h2>align-content</h2>
-            <p>Info 6</p>
-            <div class="codes">here</div>
+            <p>This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how
+                justify-content aligns individual items within the main-axis.</p>
+            <div class="codes">.container {
+                align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch |
+                start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+                }</div>
         </article>
     </main>
     <footer>
