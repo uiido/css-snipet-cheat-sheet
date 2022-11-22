@@ -36,7 +36,7 @@ main {
     align-content: space-around;
 }
 
-.code-box {
+article {
     background-color: var(--background);
     border: 3px;
     border-color: #EAF4F4;
@@ -46,9 +46,10 @@ main {
     padding: 2%;
     color: var(--text);
     width: 30%;
+    transition: all 500ms ease;
 }
 
-.code-box h2 {
+article h2 {
     font-size: 20px;
     text-align: center;
     line-height: 30px;
@@ -59,13 +60,20 @@ main {
     border-radius: 10px;
     margin: auto;
     margin-top: -12%;
+    transition: all 500ms ease;
 }
 
-.code-box p {
+article p {
     margin: 2%;
     margin-bottom: 4%;
     max-width: 95%;
 }
+
+article:hover,
+article:hover h2 {
+    box-shadow: 0 0 16px #6B9080;
+}
+
 
 .codes {
     background-color: #6B9080;
@@ -73,6 +81,13 @@ main {
     padding: 3%;
     border-radius: 20px;
     max-width: 95%;
+    flex: 1;
+}
+
+
+article code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
 }
 
 footer {
