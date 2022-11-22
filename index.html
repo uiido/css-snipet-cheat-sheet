@@ -14,38 +14,67 @@
 <body>
     <header>
         <h1>CSS Snippet Cheat Sheet</h1>
-        Blurb about cheat sheet codes
+        <p>Sometimes it doesn't hurt to review a tricky bit of CSS, or have a place to check some of your favorite
+            codes.</p>
     </header>
     <main>
-        <div class="code-box">
-            <h2>Box 1</h2>
-            Info 1
-        </div>
+        <article class="code-box">
+            <h2>flex-direction</h2>
+            <p>This establishes the main-axis, thus defining the direction flex items are placed in the flex container.
+                Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as
+                primarily laying out either in horizontal rows or vertical columns.
+                The default is <emphasis>row</emphasis>, but you can also use <emphasis>row-reverse</emphasis>,
+                <emphasis>column</emphasis>, or <emphasis>column-reverse</emphasis>.
+            </p>
+            <div class="codes">.container {
+                flex-direction: row | row-reverse | column | column-reverse;
+                }</div>
+        </article>
 
-        <div class="code-box">
-            <h2>Box 2</h2>
-            Info 2
-        </div>
+        <article class="code-box">
+            <h2>flex-wrap</h2>
+            <p>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap
+                as needed with this property. The default is <emphasis>nowrap</emphasis> but you may also use <emphasis>
+                    wrap</emphasis> or <emphasis>wrap-reverse</emphasis>.</p>
+            <div class="codes">.container {
+                flex-wrap: nowrap | wrap | wrap-reverse;
+                }</div>
+        </article>
 
-        <div class="code-box">
-            <h2>Box 3</h2>
-            Info 3
-        </div>
+        <article class="code-box">
+            <h2>flex-flow</h2>
+            <p>This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex
+                container&#39;s main and cross axes. The default value is row nowrap.</p>
+            <div class="codes">.container {
+                flex-flow: column wrap;
+                }</div>
+        </article>
 
-        <div class="code-box">
-            <h2>Box 4</h2>
-            Info 4
-        </div>
+        <article class="code-box">
+            <h2>justify-content</h2>
+            <p>This defines the alignment along the main axis. It helps distribute extra free space leftover when either
+                all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It
+                also exerts some control over the alignment of items when they overflow the line.</p>
+            <emphasis>Flex-start</emphasis> is the default but you may also use <emphasis>1</emphasis>, <emphasis>2
+            </emphasis>, <emphasis>3</emphasis>, <emphasis>4</emphasis>, <emphasis>5</emphasis>, <emphasis>6</emphasis>,
+            <emphasis>7</emphasis>, <emphasis>8</emphasis>, and <emphasis>9</emphasis>.</p>
+            <div class="codes">.container {
+                justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start |
+                end | left | right ... + safe | unsafe;
+                }</div>
+        </article>
 
-        <div class="code-box">
-            <h2>Box 5</h2>
-            Info 5
-        </div>
+        <article class="code-box">
+            <h2>align-items</h2>
+            <p>Info 5</p>
+            <div class="codes">here</div>
+        </article>
 
-        <div class="code-box">
-            <h2>Box 6</h2>
-            Info 6
-        </div>
+        <article class="code-box">
+            <h2>align-content</h2>
+            <p>Info 6</p>
+            <div class="codes">here</div>
+        </article>
     </main>
     <footer>
         Made with blood, sweat, and CSS

@@ -1,20 +1,115 @@
-* {}
-
-body {}
-
-header {}
-
-main {}
-
-.code-box {
-    background-color: #A4C3B2;
-    border: 2px;
-    border-color: #EAF4F4;
-    border-style: dashed;
+* {
+    font-family: Georgia, Times, Times New Roman, serif;
 }
 
-footer {}
+:root {
+    --background: #A4C3B2;
+    --box-background: #6B9080;
+    --text: #6B9080;
+    --margin: 3%;
+}
 
-@media screen and (max-width: 992px) {}
+body {
+    background-color: var(--background);
+}
 
-@media screen and (max-width: 768px) {}
+header {
+    background-color: var(--background);
+    margin: var(--margin);
+    text-align: center;
+    color: var(--text)
+}
+
+h1 {
+    font-size: 48px;
+}
+
+header p {
+    margin: var(--margin);
+}
+
+main {
+    background-color: var(--background);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.code-box {
+    background-color: var(--background);
+    border: 3px;
+    border-color: #EAF4F4;
+    border-style: dashed;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 2%;
+    color: var(--text);
+    width: 30%;
+}
+
+.code-box h2 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    max-width: 90%;
+    background-color: var(--background);
+    border: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: -12%;
+}
+
+.code-box p {
+    margin: 2%;
+    margin-bottom: 4%;
+    max-width: 95%;
+}
+
+.codes {
+    background-color: #6B9080;
+    color: #EAF4F4;
+    padding: 3%;
+    border-radius: 20px;
+    max-width: 95%;
+}
+
+footer {
+    background-color: var(--background);
+    text-align: center;
+    padding: 3%;
+    color: var(--text);
+    font-size: 24px;
+}
+
+@media screen and (max-width: 992px) {
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .code-box {
+        width: 40%;
+        margin: 3%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .code-box {
+        width: 90%;
+        min-height: 200px;
+        margin: 4%;
+    }
+
+    .code-box h2 {
+        margin-top: -6%;
+    }
+}
