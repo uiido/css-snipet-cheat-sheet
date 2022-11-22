@@ -23,8 +23,8 @@
             <p>This establishes the main-axis, thus defining the direction flex items are placed in the flex container.
                 Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as
                 primarily laying out either in horizontal rows or vertical columns.
-                The default is <emphasis>row</emphasis>, but you can also use <emphasis>row-reverse</emphasis>,
-                <emphasis>column</emphasis>, or <emphasis>column-reverse</emphasis>.
+                The default is <emp>row</em>, but you can also use <em>row-reverse</em>,
+                    <em>column</em>, or <em>column-reverse</em>.
             </p>
             <div class="codes">
                 <pre><code>.container {
@@ -37,37 +37,44 @@
         <article class="code-box">
             <h2>flex-wrap</h2>
             <p>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap
-                as needed with this property. The default is <emphasis>nowrap</emphasis> but you may also use <emphasis>
-                    wrap</emphasis> or <emphasis>wrap-reverse</emphasis>.</p>
-            <div class="codes">.container {
+                as needed with this property. The default is <em>nowrap</em> but you may also use <em>
+                    wrap</em> or <em>wrap-reverse</em>.</p>
+            <div class="codes">
+                <pre><code>.container {
                 flex-wrap: nowrap | wrap | wrap-reverse;
-                }</div>
+                }</code></pre>
+            </div>
         </article>
 
         <article class="code-box">
             <h2>flex-flow</h2>
             <p>This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex
                 container&#39;s main and cross axes. The default value is row nowrap.</p>
-            <div class="codes">.container {
+            <div class="codes">
+                <pre><code>.container {
                 flex-flow: column wrap;
-                }</div>
+                }</code></pre>
+            </div>
         </article>
 
         <article class="code-box">
             <h2>justify-content</h2>
             <p>This defines the alignment along the main axis. It helps distribute extra free space leftover when either
                 all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It
-                also exerts some control over the alignment of items when they overflow the line.</p>
-            <emphasis>Flex-start</emphasis> is the default but you may also use <emphasis>flex-end</emphasis>,
-            <emphasis>start
-            </emphasis>, <emphasis>end</emphasis>, <emphasis>left</emphasis>, <emphasis>right</emphasis>, <emphasis>
-                center</emphasis>,
-            <emphasis>space-between</emphasis>, <emphasis>space-around</emphasis>, and <emphasis>space-evenly</emphasis>
-            .</p>
-            <div class="codes">.container {
+                also exerts some control over the alignment of items when they overflow the line.
+                <em>Flex-start</em> is the default but you may also use <em>flex-end</em>,
+                <em>start
+                </em>, <em>end</em>, <em>left</em>, <em>right</em>, <em>
+                    center</em>,
+                <em>space-between</em>, <em>space-around</em>, and <em>space-evenly</em>
+                .
+            </p>
+            <div class="codes">
+                <pre><code>.container {
                 justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start |
                 end | left | right ... + safe | unsafe;
-                }</div>
+                }</code></pre>
+            </div>
         </article>
 
         <article class="code-box">
@@ -78,20 +85,24 @@
                     self-start</em>, <em>flex-end / end / self-end
                 </em>, <em>center</em>, or <em>baseline</em>.
             </p>
-            <div class="codes">.container {
+            <div class="codes">
+                <pre><code>.container {
                 align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline |
                 start | end | self-start | self-end + ... safe | unsafe;
-                }</div>
+                }</code></pre>
+            </div>
         </article>
 
         <article class="code-box">
             <h2>align-content</h2>
             <p>This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how
                 justify-content aligns individual items within the main-axis.</p>
-            <div class="codes">.container {
+            <div class="codes">
+                <pre><code>.container {
                 align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch |
                 start | end | baseline | first baseline | last baseline + ... safe | unsafe;
-                }</div>
+                }</code></pre>
+            </div>
         </article>
     </main>
     <footer>
