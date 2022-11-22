@@ -37,6 +37,8 @@ main {
 }
 
 article {
+    display: flex;
+    flex-direction: column;
     background-color: var(--background);
     border: 3px;
     border-color: #EAF4F4;
@@ -59,6 +61,8 @@ article h2 {
     border-style: solid;
     border-radius: 10px;
     margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-top: -12%;
     transition: all 500ms ease;
 }
@@ -74,20 +78,20 @@ article:hover h2 {
     box-shadow: 0 0 16px #6B9080;
 }
 
-
-.codes {
-    background-color: #6B9080;
-    color: #EAF4F4;
-    padding: 3%;
-    border-radius: 20px;
-    max-width: 95%;
+article pre {
+    padding: 8px;
+    margin-top: 8px;
     flex: 1;
 }
 
-
-article code {
+article code,
+article pre {
+    background-color: #6b9080;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
+    color: #EAF4F4;
+    max-width: 100%;
+    border-radius: 20px;
 }
 
 footer {
