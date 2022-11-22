@@ -1,0 +1,20 @@
+* {}
+
+body {}
+
+header {}
+
+main {}
+
+.code-box {
+    background-color: #A4C3B2;
+    border: 2px;
+    border-color: #EAF4F4;
+    border-style: dashed;
+}
+
+footer {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {}
